@@ -68,9 +68,9 @@ wii-game-archive-processor/
 │   ├── game2.zip
 │   └── ...
 │
-├── DolphinTool.exe
-├── wit.exe
-├── wiitdb.txt
+├── DolphinTool.exe             # Tool for converting .rvz to .iso
+├── wit.exe                     # Tool for converting .iso to .wbfs
+├── wiitdb.txt                  # Database for game ID lookup (game name and region)
 ├── file_processing_log.sqlite  # SQLite database for logging
 ├── file_processing.log         # Log file for all operations
 ├── main.py                     # Main script for processing game archives
