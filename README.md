@@ -58,6 +58,26 @@ If the required tools are not found locally, the project will attempt to downloa
 4. Logs all processes in a SQLite database (`file_processing_log.sqlite`).
 5. Detects games available in multiple regions and logs them into the database.
 
+## Folder Structure
+
+```plaintext
+wii-game-archive-processor/
+│
+├── games/                  # Folder containing .zip files of game archives
+│   ├── game1.zip
+│   ├── game2.zip
+│   └── ...
+│
+├── DolphinTool.exe
+├── wit.exe
+├── wiitdb.txt
+├── file_processing_log.sqlite  # SQLite database for logging
+├── file_processing.log         # Log file for all operations
+├── main.py                     # Main script for processing game archives
+├── requirements.txt            # Required Python packages
+└── README.md                   # Project documentation
+```
+
 ## Database Structure
 
 - **`process_log`**: Logs each processed game, including any errors.
